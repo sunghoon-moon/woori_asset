@@ -231,7 +231,7 @@ a { text-decoration: none;}
 #history {
     width: 1920px;
     min-width: 1200px;
-    height: 550px;
+    height: 610px;
     /* outline: 1px solid red; */
     /* padding-top: 60px; */
     margin-bottom: 80px;
@@ -244,7 +244,7 @@ a { text-decoration: none;}
 }
 #history > .content > .text > h1 {
     position: absolute;
-    top: 10px;
+    top: 70px;
     left: 20px;
     font-size: 30px;
     font-weight: 900;
@@ -252,7 +252,7 @@ a { text-decoration: none;}
 }
 #history > .content > .text > p {
     position: absolute;
-    top: 60px;
+    top: 120px;
     left: 20px;
     font-size: 24px;
     font-weight: 300;
@@ -260,7 +260,7 @@ a { text-decoration: none;}
 #history > .content > .history_btn {
     position: absolute;
     left: 20px;
-    top: 155px;
+    top: 215px;
     width: 200px;
     height: 40px;
     border: 2px solid #0061ac;
@@ -291,31 +291,31 @@ a { text-decoration: none;}
 }
 #history > .content > .point > p:first-child {
     left: 13px;
-    top: 303px;
+    top: 363px;
 }
 #history > .content > .point > p:nth-child(2) {
     left: 111px;
-    top: 222px;
+    top: 282px;
 }
 #history > .content > .point > p:nth-child(3) {
     left: 256px;
-    top: 293px;
+    top: 353px;
 }
 #history > .content > .point > p:nth-child(4) {
     left: 438px;
-    top: 243px;
+    top: 303px;
 }
 #history > .content > .point > p:nth-child(5) {
     left: 623px;
-    top: 178px;
+    top: 238px;
 }
 #history > .content > .point > p:nth-child(6) {
     left: 796px;
-    top: 135px;
+    top: 195px;
 }
 #history > .content > .point > p:nth-child(7) {
     left: 960px;
-    top: 78px;
+    top: 138px;
 }
 #history > .history_img {
     background: #fff;
