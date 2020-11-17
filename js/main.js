@@ -209,3 +209,30 @@ $(function(){
       }
   });
 })
+
+// header asset
+const header = {
+  id: '#header_wrap', // HTML 문서상의 요소명
+  url: "./components/header.html"  // 파일 경로
+}
+
+// footer asset
+const footer = {
+  id: '#main_footer',
+  url: "./components/footer.html"
+}
+
+function loadAssets(asset) {
+  $.ajax({
+    url: asset.url,
+    success: function (data) {
+      $(asset.id).html(data);
+    }
+  });
+}
+
+// 헤더 로드
+loadAssets(header)
+
+// 푸터 로드
+loadAssets(footer)
