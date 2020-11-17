@@ -199,14 +199,6 @@ $(function(){
   $('#visual #lnb li').click(function(){
       $('#visual #lnb li').removeClass();
       $(this).eq(menu).addClass('active');
-  })
-
-  // history
-  enterView({
-      selector: '.history_img',
-      enter: function(el) {
-          el.classList.add('play');
-      }
   });
 })
 
