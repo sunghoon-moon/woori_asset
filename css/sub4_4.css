@@ -1,7 +1,4 @@
 /* sub4_4.css */
-/* 
-    main_color: #0067ac
-*/
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -14,6 +11,7 @@ body {
 
 a {text-decoration: none;}
 li {list-style-type: none;}
+
 
 /* header */
 /* visual banner */
@@ -82,7 +80,6 @@ li {list-style-type: none;}
     width: 1200px;
     height: 50px;
     margin: 0 auto;
-    /* background: #ccc; */
     text-align: right;
 }
 #breadcrumb > .breadcrumb > a {
@@ -131,6 +128,7 @@ li {list-style-type: none;}
     width: 1200px;
     margin: 0 auto;
     margin-bottom: 100px;
+    border: none;
 }
 
 /* footer */

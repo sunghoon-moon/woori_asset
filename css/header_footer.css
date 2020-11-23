@@ -222,7 +222,7 @@ body {
 
 
 /* footer */
-#main_footer {
+  #main_footer {
     min-width: 1200px;
     width: 100%;
     background: #3d3f49;

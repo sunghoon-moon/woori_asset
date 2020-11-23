@@ -1,7 +1,4 @@
 /* sub1_1.css */
-/* 
-    main_color: #0067ac
-*/
 
 * {
     margin: 0; padding: 0;
@@ -21,6 +18,7 @@ h2 {
     font-weight: 500;
     color: #444;
 }
+
 
 /* visual banner */
 #fund_vi {
@@ -90,7 +88,6 @@ h2 {
     width: 1200px;
     height: 50px;
     margin: 0 auto;
-    /* background: #ccc; */
     text-align: right;
 }
 #breadcrumb > .breadcrumb > a {
@@ -102,7 +99,6 @@ h2 {
 
 /* fund contents */
 #fund_all {
-    /* position: relative; */
     width: 100%;
     min-width: 1200px;
     height: 1110px;
@@ -208,7 +204,6 @@ h2 {
     position: absolute;
     width: 350px; height: 480px;
     background: rgba(0, 0, 0, 0.7);
-    /* background: linear-gradient(#0067ac, #7a8ca6); */
     opacity: .9;
 }
 .card_hover > .plus p {

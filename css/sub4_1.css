@@ -10,36 +10,38 @@ body {
 ul { list-style-type: none;}
 a { text-decoration: none;}
 
-
 /* visual */
-#visual {
+#location_vi {
     width: 100%;
     min-width: 1200px;
-    height: 435px;
-    background-image: url('../images/bg.png');
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-}
-#visual > .content {
-    width: 1200px;
-    height: 435px;
+    height: 400px;
+    background-image: url(../images/location_banner.jpg);
     margin: 0 auto;
-    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#visual > .content > h1 {
-    position: absolute;
-    color: #fff;
-    font-size: 40px;
+#location_vi > h1 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 700;
-    left: calc(50% - (147.2px / 2));
-    /* line-height: 400px; */
+    font-size: 40px;
+    color: #fff;
+    text-align: center;   
     padding-top: 200px;
 }
 /* lnb */
+#visual {
+    position: relative;
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+}
 #visual > .content > #lnb {
     width: 1200px;
-    position: absolute;
-    bottom: 0;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: -35px;
 }
 #visual > .content > #lnb li {
     float: left;
@@ -70,7 +72,6 @@ a { text-decoration: none;}
     width: 1200px;
     height: 50px;
     margin: 0 auto;
-    /* background: #ccc; */
     text-align: right;
 }
 #breadcrumb > .breadcrumb > a {
@@ -84,62 +85,51 @@ a { text-decoration: none;}
 #ceo {
     width: 100%;
     min-width: 1200px;
-    height: 550px;
-    /* outline: 1px solid red; */
-    /* margin-top: 50px; */
-    margin-bottom: 80px;
+    height: 530px;
+    margin: 80px 0;
     position: relative;
 }
 #ceo > .text {
     width: 1200px;
-    height: 550px;
     margin: 0 auto;
     position: relative;
 }
 #ceo > .text > h1 {
-    position: absolute;
-    left: 10px;
-    top: 35px;
     color: #0061ac;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 700;    
+    margin-bottom: 25px;
 }
 #ceo > .text > .first {
-    position: absolute;
-    left: 10px;
-    top: 90px;
     color: #0061ac;
-    line-height: 30px;
-    font-size: 24px;
+    line-height: 35px;
+    font-size: 20px;
     font-weight: 300;
+    margin-bottom: 20px;
 }
 #ceo > .text > .second {
-    position: absolute;
-    left: 10px;
-    top: 200px;
     color: #444;
-    line-height: 30px;
-    font-size: 24px;
+    line-height: 35px;
+    font-size: 20px;
     font-weight: 300;
 }
 #ceo > .text > .name {
-    position: absolute;
-    left: 10px;
-    top: 310px;
-    font-size: 30px;
-    font-weight: 900;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
 }
 #ceo > .text > .name > span {
-    position: absolute;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
 }
 #ceo > .bg {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 70px;
     width: 100%;
     min-width: 1200px;
-    height: 140px;
+    height: 80px;
     background: #0061ac;
 }
 #ceo > .text > img {
@@ -151,91 +141,90 @@ a { text-decoration: none;}
 
 /* mission */
 #mission {
-    width: 100%;
-    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
     height: 550px;
-    /* outline: 1px solid red; */
     position: relative;
     margin-bottom: 80px;
 }
 #mission > .content {
-    width: 1200px;
-    height: 550px;
-    margin: 0 auto;
+    width: 1050px;
+    height: 425px;
     position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 #mission > .content > .mission > h1 {
-    position: absolute;
-    top: 70px;
-    left: 70px;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     color: #0061ac;
 }
 #mission > .content > .mission > .line {
     position: absolute;
     width: 130px;
-    height: 3px;
+    height: 1px;
     background: #444;
-    left: 282px;
-    top: 80px;
+    left: 230px;
+    top: 25px;
 }
 #mission > .content > .mission > h2 {
     position: absolute;
-    top: 70px;
+    top: 5px;
     left: 470px;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 500;
     color: #0061ac;
 }
 #mission > .content > .mission > p {
     position: absolute;
-    top: 180px;
+    top: 110px;
     left: 470px;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 300;
 }
 #mission > .content > .vision > h1 {
-    position: absolute;
-    top: 320px;
-    left: 83px;
-    font-size: 36px;
+    position: relative;
+    top: 200px;
+    left: 15px;
+    font-size: 30px;
     font-weight: 700;
     color: #0061ac;
 }
 #mission > .content > .vision > .line {
     position: absolute;
     width: 130px;
-    height: 3px;
+    height: 1px;
     background: #444;
-    left: 282px;
-    top: 330px;
+    left: 230px;
+    top: 225px;
 }
 #mission > .content > .vision > h2 {
     position: absolute;
-    top: 320px;
+    top: 205px;
     left: 470px;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 500;
     color: #0061ac;
 }
 #mission > .content > .vision > p {
     position: absolute;
-    top: 430px;
+    top: 310px;
     left: 470px;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
 }
 
 /* history */
 #history {
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     min-width: 1200px;
-    height: 610px;
-    /* outline: 1px solid red; */
-    /* padding-top: 60px; */
+    height: 640px;
     margin-bottom: 80px;
-    /* background-image: url('../images/history.png'); */
+    margin: 0 auto;
 }
 #history > .content {
     width: 1200px;
@@ -243,24 +232,18 @@ a { text-decoration: none;}
     position: relative;
 }
 #history > .content > .text > h1 {
-    position: absolute;
-    top: 70px;
-    left: 20px;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 700;
     color: #0061ac;
+    margin-bottom: 30px;
 }
 #history > .content > .text > p {
-    position: absolute;
-    top: 120px;
-    left: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 40px;
 }
 #history > .content > .history_btn {
-    position: absolute;
-    left: 20px;
-    top: 215px;
     width: 200px;
     height: 40px;
     border: 2px solid #0061ac;
@@ -278,8 +261,9 @@ a { text-decoration: none;}
 #history > .content > .history_btn > a {
     display: block;
     color: #fff;
-    line-height: 35px;
+    line-height: 40px;
 }
+#history > .content > .point{ position: relative;}
 #history > .content > .point > p {
     position: absolute;
     font-size: 16px;
@@ -291,33 +275,36 @@ a { text-decoration: none;}
 }
 #history > .content > .point > p:first-child {
     left: 13px;
-    top: 363px;
+    top: 163px;
 }
 #history > .content > .point > p:nth-child(2) {
     left: 111px;
-    top: 282px;
+    top: 82px;
 }
 #history > .content > .point > p:nth-child(3) {
     left: 256px;
-    top: 353px;
+    top: 153px;
 }
 #history > .content > .point > p:nth-child(4) {
     left: 438px;
-    top: 303px;
+    top: 103px;
 }
 #history > .content > .point > p:nth-child(5) {
     left: 623px;
-    top: 238px;
+    top: 38px;
 }
 #history > .content > .point > p:nth-child(6) {
     left: 796px;
-    top: 195px;
+    top: -5px;
 }
 #history > .content > .point > p:nth-child(7) {
     left: 960px;
-    top: 138px;
+    top: -62px;
 }
 #history > .history_img {
+    position: relative;
+    top: -190px;
+    z-index: -1;
     background: #fff;
     overflow: hidden;
 }
@@ -329,15 +316,15 @@ a { text-decoration: none;}
 @keyframes play {
     0% {
         width: 0;
-        height: 550px;
+        height: 640px;
     }
     20% {
         width: 0;
-        height: 550px;
+        height: 640px;
     }
     100% {
         width: 100%;
-        height: 550px;
+        height: 640px;
     }
 }
 
@@ -346,11 +333,11 @@ a { text-decoration: none;}
     width: 100%;
     min-width: 1200px;
     height: 550px;
-    /* outline: 1px solid red; */
-    margin-bottom: 80px;
+    margin: 80px 0;
 }
 #care > .content {
-    width: 1200px;
+    width: 1050px;
+    height: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -358,34 +345,29 @@ a { text-decoration: none;}
     position: absolute;
     width: 158px;
     height: 158px;
-    border-radius: 79px;
+    border-radius: 50%;
     line-height: 158px;
     color: white;
-    background: #ccc;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
 } 
 #care > .content > .circle > .capability {
-    left: 142px;
     top: 30px;
     background: #20c4f4;
     z-index: 3;
 }
 #care > .content > .circle > .appreciation {
-    left: 142px;
     top: 141px;
     background: #0078b9;
     z-index: 2;
 }
 #care > .content > .circle > .responsibility {
-    left: 142px;
     top: 255px;
     background: #0067ac;
     z-index: 1;
 }
 #care > .content > .circle > .evolution {
-    left: 142px;
     top: 367px;
     background: #094770;
 }
@@ -396,7 +378,7 @@ a { text-decoration: none;}
     font-weight: 700;
 }
 #care > .content > .name > p > span {
-    font-size: 36px;
+    font-size: 30px;
 }
 #care > .content > .name > p:first-child > span {
     color: #20c4f4;
@@ -412,26 +394,26 @@ a { text-decoration: none;}
 }
 
 #care > .content > .name > p:first-child {
-    left: 364px;
+    left: 340px;
     top: 86px;
 }
 #care > .content > .name > p:nth-child(2) {
-    left: 364px;
+    left: 340px;
     top: 200px;
 }
 #care > .content > .name > p:nth-child(3) {
-    left: 364px;
+    left: 340px;
     top: 315px;
 }
 #care > .content > .name > p:last-child {
-    left: 364px;
+    left: 340px;
     top: 427px;
 }
 #care > .content > .description > p{
     position: absolute;
-    font-size: 24px;
-    line-height: 36px;
-    left: 635px;
+    font-size: 20px;
+    line-height: 35px;
+    left: 675px;
 }
 #care > .content > .description > p:first-child {top: 75px;}
 #care > .content > .description > p:nth-child(2) {top: 188px;}
@@ -443,65 +425,56 @@ a { text-decoration: none;}
     width: 100%;
     min-width: 1200px;
     height: 630px;
-    /* outline: 1px solid red; */
-    background-image: url('../images/mission.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 #slogan > .content {
     width: 1200px;
     height: 550px;
     margin: 0 auto;
     position: relative;
-    /* outline: 1px solid blue; */
 }
 #slogan > .content > div {
-    width: 291px;
+    width: 320px;
     height: 373px;
     background: #ccc;
-    position: absolute;
+    float: left;
+    margin-right: 120px;
     color: white;
     text-align: center;
-    font-weight: 500;
     box-shadow: 0 10px 20px rgb(151, 151, 151);
+    position: relative;
 }
+#slogan > .content > div:last-child {margin-right: 0;}
 
 #slogan > .content > div > h1 {
-    font-size: 48px;
-    margin-top: 15px;
+    font-size: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 #slogan > .content > div > h2 {
     font-size: 24px;
     margin-bottom: 25px;
+    font-weight: 400;
 }
 #slogan > .content > div > p {
     font-size: 16px;
 }
 
 #slogan > .content > .first {
-    position: absolute;
     background: #20c4f4;
-    left: 94px;
-    top: 28px;
     animation-name: slogan;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 #slogan > .content > .second {
-    position: absolute;
+    top: 20%;
     background: #094770;
-    left: 458px;
-    top: 151px;
     animation-name: slogan;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 #slogan > .content > .third {
-    position: absolute;
+    top: 8%;
     background: #0067ac;
-    left: 821px;
-    top: 82px;
     animation-name: slogan;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -521,11 +494,10 @@ a { text-decoration: none;}
 
 /* greetings */
 #greetings {
+    clear: both;
     width: 100%;
     min-width: 1200px;
     height: 600px;
-    /* outline: 1px solid red; */
-    /* margin-bottom: 80px; */
     position: relative;
 }
 #greetings > .bg {
@@ -541,22 +513,19 @@ a { text-decoration: none;}
     width: 1200px;
     margin: 0 auto;
     position: relative;
+    transform: translate(0, -50%);
+    top: 50%;
 }
 #greetings > .content > h1 {
-    position: absolute;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 300;
     color: #0061ac;
-    left: 37px;
-    top: 92px;
+    margin-bottom: 20px;
 }
 #greetings > .content > h1 > span {
-    font-weight: 900;
+    font-weight: 700;
 }
 #greetings > .content > p {
-    position: absolute;
     font-size: 22px;
-    left: 37px;
-    top: 260px;
     line-height: 34px;
 }

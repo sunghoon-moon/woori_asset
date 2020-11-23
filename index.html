@@ -7,8 +7,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="우리자산운용" />
   <meta property="og:description" content="함께하는 든든한 파트너, 우리자산운용 공식홈페이지입니다." />
-  <meta property="og:image" content="./images/meta_img.jpg" />
-  <meta property="og:url" content="https://eunyoungdana.github.io/woori_asset_management/" />
+  <meta property="og:image" content="./images/meta_img2.jpg" />
+  <meta property="og:url" content="https://eunyoungdana.github.io/woori_asset_management" />
+  <link rel="canonical" href="https://eunyoungdana.github.io/woori_asset_management">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   <!-- swiper css -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -26,10 +27,8 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- main.js -->
   <script src="./js/main.js"></script>
-  
 </head>
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
-
+  <body>
   <!-- Header -->
   <div id="header_wrap"></div>
 
@@ -103,7 +102,7 @@
   <script language="javascript" src="./js/fundNews.js"></script>
 
   <!-- Aside menu  -->
-  <section id="aside_menu" onclick="$('#aside_menu').hide()">
+  <nav id="aside_menu" onclick="$('#aside_menu').hide()">
     <a href="#" class="aside_menu_con">
       <i class="fas fa-coins"></i>
       <p>제품<br>상담</p>
@@ -119,13 +118,13 @@
     <a id="top" href="#" class="aside_menu_con">
       <p>TOP</p>
     </a>
-  </section>
+  </nav>
 
   <!-- Fund BEST3 -->
   <div id="best3_wrap">
     <section id="best3">
       <div class="section_title">
-        <h1>인기검색 펀드 BEST3</h1>
+        <h2>인기검색 펀드 BEST3</h2>
         <p>고객의 수입을 최우선으로 하는 우리자산운용 펀드를 소개합니다.</p>
       </div>
       <a href="#" class="best_list">
@@ -164,7 +163,7 @@
   <!-- Fund Info -->
   <section id="fund_info">
     <div class="section_title">
-      <h1>펀드상품 안내</h1>
+      <h2>펀드상품 안내</h2>
       <p>펀드 투자의 길잡이, 우리자산운용이 올바른 펀드 투자의 길을 제시합니다.</p>
     </div>
     <div id="fund_img">
@@ -183,16 +182,23 @@
       <p class="fund_detail">채권형 펀드는 투자자산에 주식(주식관련 파생 상품 포함)투자가 포함되지 않고(주식투자 비율 0%), 채권투자 비율이 60% 이상인 펀드입니다.<br>금리의 변동에 따라 수익률도 변동되며, 투자기간에 따라 단기/중기/장기 등으로 나누어지며,<br>채권 신용등급에 따라 회사채/하이일드/일반/국공채 등으로 분류합니다.</p>
       <p class="fund_detail">자산을 주로 단기성 자산(콜론, CD, CP 등)으로 운용하는 상품으로, 입출금이 빈번한 투자자에게 적합한 상품입니다.</p>
     </div>
-    <a href="./sub1_1.html" id="more">MORE +</a>
+    <div id="more">
+      <a href="./sub1_1.html">
+        <svg>
+          <rect class="shape" width="200" height="55"></rect>
+        </svg>
+        <p>MORE +</p>
+        </a>
+    </div>
+    
   </section>
-  <script src="./js/fund_info.js"></script>
 
   <!-- Fund registration -->
   <div id="fund_registration_wrap">
     <section id="fund_registration">
       <div id="reg_contents_wrap">
         <div class="reg_contents">
-          <h1>투자신탁 가입안내</h1>
+          <h2>투자신탁 가입안내</h2>
           <p>상품 가입 시 구비서류는 판매사마다 조금씩 다를 수 있으니, 구비서류에 대한 기타 자세한 사항은 해당 판매사에 미리 확인하시고 방문하시면 더욱 편리합니다.</p>
         </div>
         <a href="./sub1_1.html" class="reg_contents hover">
@@ -228,7 +234,7 @@
   <div id="care_wrap">
     <section id="care">
       <div class="section_title">
-        <h1>운용철학</h1>
+        <h2>운용철학</h2>
         <p>고객의 행복과 믿음을 중요시 하는 운용사, 우리자산운용의 운용시스템을 소개합니다.</p>
       </div>
       <div id="care_slider">

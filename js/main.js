@@ -2,6 +2,18 @@
 let $isMenuBtnClicked = false;
 
 function click() {if ((event.button==2) || (event.button==2)) {alert('무단복사를 막기 위해 마우스 우클릭 금지가 설정되어 있습니다');}}document.onmousedown=click
+$(document).ready(function(){
+    $(document).bind('keydown',function(e){
+        if ( e.keyCode == 123) {
+            e.preventDefault();
+            e.returnValue = false;
+        }
+    });
+});
+
+document.ondragstart = new Function('return false');   
+document.onselectstart = new Function('return false');  
+document.oncontextmenu = new Function('return false');   
 
 // gnb hover
 $(function(){
@@ -91,9 +103,11 @@ $(function(){
 $(document).ready(function(){
   $(window).scroll(function(){
     if ($(this).scrollTop() >= 700) {
-      $('#aside_menu').fadeIn(300);
+      // $('#aside_menu').fadeIn(300);
+      $('#aside_menu').addClass('active');
     } else {
-      $('#aside_menu').fadeOut(300);
+      // $('#aside_menu').fadeOut(300);
+      $('#aside_menu').removeClass('active');
     }
   })
 
@@ -103,39 +117,53 @@ $(document).ready(function(){
   });
 });
 
+
+// var scrollTop = 0;
+//   scrollTop = $(document).scrollTop();
+//   checkAsideStatus();
+
+//   $(window).on('scroll resize', function() {
+//     scrollTop = $(document).scrollTop();
+//     checkAsideStatus();
+//   });
+
+//   function checkAsideStatus() {
+//       if (scrollTop > 500) {
+//           $('#rightbar').addClass('active');
+//       } else {
+//           $('#rightbar').removeClass('active');
+//       }
+//   }
+
 // fund info
 $(document).ready(function(){
-  fadeSlides();
-  });
-  function fadeSlides(){
-        var index = 0;
-        var duration= 1000;
-        var slideFirst= 1;
-
-        fadeSlide(slideFirst);
-
-        $('.fund_list').on('click', function(e) {
-            e.preventDefault();
-            var idx = $('.bsiness_list li').index($(this).parent());
-            $('.bsiness_list li').removeClass('on');
-            $('.bsiness_list li:eq('+(idx)+')').addClass('on');
-            fadeSlide(idx + 1);
-        });
-        function fadeSlide(n) {
-            $('#buslnese_explan ul li').stop(true).animate({'opacity':0},duration,function() {$(this).css({'display':'none'});});
-            $('#sub_slider .slider_con ul li').stop(true).animate({'opacity':0},duration,function() {$(this).css({'display':'none'});});
-            $('#sub_slider .mask_wrap li').css({'display':'none'}).stop(true);
-            
-            
-            $('#buslnese_explan ul li:eq('+(n - 1)+')').css({'display':'block'}).stop(true).animate({'opacity':1},duration);
-            $('#sub_slider .mask_wrap li:eq('+(n - 1)+')').css({'display':'block'});
-            $('#sub_slider .slider_con ul li:eq('+(n - 1)+')').css({'display':'block'}).stop(true).animate({'opacity':1},duration);
-            
-            $('.bsiness_list li').removeClass('on');
-            $('.bsiness_list li:eq('+(n - 1)+')').addClass('on');
-            index = n;
-        }      
+  let buttons = document.getElementsByClassName('fund_list')
+  let articles = document.getElementsByClassName('fund_detail')
+  let fund_img = document.getElementById('fund_img')
+  let fund_img_icon = document.getElementsByClassName('fund_img_icon')[0]
+  let pos = ['50% 0%','50% 50%','50% 50%','50% 50%','50% 40%']
+  let size = [ '80%', '80%', '80%','80%','80%']
+  
+  for(let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener('click',function(){
+      for(let j = 0; j < articles.length; j++) {
+        if(i == j){
+          $(articles[j]).addClass('show_fund_details'),
+          $(buttons[j]).addClass('on')
+        } else {
+          $(articles[j]).removeClass('show_fund_details'),
+          $(buttons[j]).removeClass('on')
+        }
+      }
+      fund_img.style.backgroundImage = 'url(./images/fund_bg_0' + (i + 1) + '.jpg)'
+      fund_img.style.backgroundPosition = pos[i];
+      fund_img.style.backgroundSize = size[i];
+      fund_img_icon.style.background = 'url(./images/fund_list_0' + (i + 1) + '.png)'
+      fund_img_icon.style.backgroundPosition = 'center'
+      fund_img_icon.style.backgroundRepeat = 'no-repeat'
+    })
   }
+});
 
   // care
   $(document).ready(function(){
@@ -193,9 +221,6 @@ $(function(){
 // lnb
 $(function(){
   var menu = 0;
-  // $('#visual #lnb li').removeClass();
-  // $('#visual #lnb li').eq(menu).addClass('active');
-
   $('#visual #lnb li').click(function(){
       $('#visual #lnb li').removeClass();
       $(this).eq(menu).addClass('active');
